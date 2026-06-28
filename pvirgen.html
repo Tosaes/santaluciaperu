@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conozca Santa Lucia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/tur-styles.css">
+    <link rel="stylesheet" href="css/css-img.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-tree"></i>
+                <span>Aventura</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <!--<li><a href="#destinos">Destinos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#contacto">Contacto</a></li>-->
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    
+    <!-- Sección de Destinos -->
+    <section id="destinos" class="destinos">
+        <h2>Destino Imperdible</h2>
+        <div class="destinos-grid">
+            <!-- Destino 1 -->
+            <div class="destino-card">
+                <div class="destino-imagen">
+                    <img src="img/pvirgen.jpg" alt="santa lucia">
+                    <div class="destino-overlay">
+                        <span class="tiempo-badge">
+                            <i class="fas fa-clock"></i> 
+                        </span>
+                    </div>
+                </div>
+                <div class="destino-info">
+                    <h3>Parque Virgen de Santa Lucia</h3>
+                    <div class="ubicacion">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Santa Lucia, Tocache, San Martin, Perú</p>
+                    </div>
+                    <p class="descripcion">
+                        Creada para fortalecer la identidad religiosa y cultural de la población.
+                        Espacio dedicado a la patrona del distrito
+
+                    </p>
+                    <div class="detalles">
+                        <div class="detalle-item">
+                            <i class="fas fa-hiking"></i>
+                            <span>Medio, especialmente para el turismo religioso.</span>
+                        </div>
+
+                        <div class="detalle-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Mejor época: todo el año</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-destino">Más Información</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <section id="galeria" class="galeria">
+        <h2>Galería de Imágenes</h2>
+        <div class="galeria-grid">
+            <div class="galeria-item">
+                <img src="img/pvirgen.jpg" alt="Vista panorámica">
+                <div class="galeria-overlay">
+                    <h3>Escultura</h3>
+                    <p>escultura conmemorando ala patrona de la ciudad.</p>
+                </div>
+            </div>
+            <div class="galeria-item">
+                <img src="img/pvirgen2.jpg" alt="Templo del Sol">
+                <div class="galeria-overlay">
+                </div>
+            </div>
+            <div class="galeria-item">
+                <img src="img/pvirgen3.jpg" alt="Camino Inca">
+                <div class="galeria-overlay">
+                </div>
+            </div>
+
+            <!-- La imagen en miniatura que el usuario hará clic -->
+            <img src="img/pvirgen2.jpg" alt="Imagen de ejemplo" id="imagenMiniatura" style="cursor: pointer; width: 300px;">
+
+            <!-- La ventana modal (oculta por defecto) -->
+            <div id="miModal" class="modal">
+                <span class="cerrar">&times;</span>
+                <img class="modal-contenido" id="imagenAmpliada">
+                <div id="pieCaption"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Información Detallada -->
+    <section id="informacion" class="informacion">
+        <h2>Información para tu Visita</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Ubicación</h3>
+                <p>Santa Lucia, Tocache, San Martin, Perú</p>
+                <p class="info-detalle">Coordenadas: 8°34′50.97″S 76°39′07.33″O</p>
+                <p class="info-detalle">Altitud: 506 msnm</p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <h3>Recorrido</h3>
+                <p class="info-detalle">02 minutos en vehiculo desde la plaza de armas.</p>
+            </div>
+            
+            <!--<div class="info-card">
+                <i class="fas fa-ticket-alt"></i>
+                <h3>Entradas y Precios</h3>
+                <p>Adultos: S/ 152.00</p>
+                <p class="info-detalle">Estudiantes: S/ 77.00</p>
+                <p class="info-detalle">Niños: S/ 70.00</p>
+                <p class="info-detalle">Reserva anticipada requerida</p>
+            </div>-->
+            
+            <div class="info-card">
+                <i class="fas fa-info-circle"></i>
+                <h3>Recomendaciones</h3>
+                <p>Llevar protector solar</p>
+                <p class="info-detalle">Mantener limpio el parque</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="mapa-section">
+        <h2>Cómo Llegar</h2>
+        <div class="mapa-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1855.1758289059205!2d-76.39102675587517!3d-8.345213578735873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2spe!4v1782684166717!5m2!1ses!2spe"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <!--<section id="contacto" class="contacto">
+        <h2>Reserva tu Aventura</h2>
+        <div class="contacto-container">
+            <form class="contacto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha deseada</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="personas">Número de personas</label>
+                    <input type="number" id="personas" min="1" max="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje o consulta</label>
+                    <textarea id="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Consulta</button>
+            </form>
+            <div class="contacto-info">
+                <h3>Información de Contacto</h3>
+                <div class="info-contacto-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+51 984 567 890</p>
+                </div>
+                <div class="info-contacto-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@turismoaventura.com</p>
+                </div>
+                <div class="info-contacto-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Av. Sol 456, Cusco, Perú</p>
+                </div>
+                <div class="redes-sociales">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!--<div class="footer-content">
+            <div class="footer-section">
+                <h3>Turismo Aventura</h3>
+                <p>Tu agencia de viajes de confianza para descubrir las maravillas del Perú.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Suscríbete para recibir ofertas especiales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email">
+                    <button type="submit">Suscribir</button>
+                </form>
+            </div>
+        </div>-->
+        <div class="footer-bottom">
+            <p>&copy; 2026 - tosaes-Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/tur-script.js"></script>
+    <script src="js/js-img.js"></script>
+</body>
+</html>
